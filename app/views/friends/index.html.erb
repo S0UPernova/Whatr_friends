@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 
   <p id="notice"><%= notice %></p>
-
+<div class="container">
   <h1>Friends</h1>
 
   <table class="table table-bordered border-dark table-hover">
@@ -36,9 +36,11 @@
     </tbody>
   </table>
 
+
   <br>
 
   <%= link_to 'New Friend', new_friend_path, class:"btn btn-success" %>
-<% else %>
+  <% else %>
   <%= link_to "Return to homepage", root_path, class:"btn btn-success fs-4 m-3" %>
-<% end %>
+  <% end %>
+</div>

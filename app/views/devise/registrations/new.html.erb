@@ -23,7 +23,18 @@
         <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Confirm Password" %>
       </div>
-
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" target="_blank" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          I Agree with <%= link_to 'Terms of Service', home_terms_path %>
+        </label>
+      </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" target="_blank" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          I Agree to <%= link_to 'Privacy Policy', home_privacy_path %>
+        </label>
+      </div>
       <div class="actions">
         <%= f.submit "Sign up", class:"btn btn-success my-1" %>
       </div>

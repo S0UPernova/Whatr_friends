@@ -29,6 +29,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 #Users implementation
 gem 'devise', '~> 4.7', '>= 4.7.3'
 
+#Bootstrap integration
+gem 'jquery-rails', '~> 4.4'
+gem 'popper_js', '~> 2.8', '>= 2.8.6'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

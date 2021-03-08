@@ -1,1 +1,1 @@
-json.partial! "friends/friend", friend: @friend
+gitjson.partial! "friends/friend", friend: @friend

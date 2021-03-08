@@ -12,14 +12,12 @@
         <th colspan="3"></th>
       </tr>
     </thead>
-
     <tbody>
       <% @friends.each do |friend| %>
       <% if friend.user == current_user %>
         <tr>
           <td>
             <%= link_to friend.first_name + ' ' + friend.last_name, friend, class:"btn btn-outline-primary" %>
-
           </td>
           <td><%= friend.email %></td>
           <td><%= friend.phone %></td>

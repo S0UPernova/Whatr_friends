@@ -1,8 +1,55 @@
-<h1>Hello Homepage</h1>
-<p>This is my first ruby on rails homepage!!!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h1>Welcome</h1>
+<hr>
+<h2>This site is intended for practice</h2>
+<p>I am working on my coding skills, and I do not guarantee quality, support, features, or updates, and I reserve the right to terminate the site, and all of its... "features" at my discretion.<br><p class="fw-bold">The update schedule is whenever I feel like it.</p></p>
+<hr><br><br>
+<article>
+	<div class="row row-cols-1 row-cols-md-2">
+		<div class="col">
+			<h3>What are friends?</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<aside class="col">
+			<h3>And where to find them?</h3>
+			<p>Nevermind the wild things title reference. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+		</aside>
+	</div>
+	<figure>
+		<figure class="my-5 text-center">
+			<h2>Friends in their natural habitat</h2>
+		</figure>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<%= image_tag("placeholder.png", alt:"placeholder", class:" d-block w-100") %>
+		    </div>
+		    <div class="carousel-item">
+		    	<%= image_tag("placeholder.png", alt:"placeholder", class:" d-block w-100") %>
+		    </div>
+		    <div class="carousel-item">
+				<%= image_tag("placeholder.png", alt:"placeholder", class:" d-block w-100") %>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</figure>
+</article>

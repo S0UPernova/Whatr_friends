@@ -1,7 +1,6 @@
 <% if @friend.user == current_user %>
-rails <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<!-- <div class="container"> -->
 <p class="field form-group">
   <strong>First name:</strong>
  <i class="form-control"> <%= @friend.first_name %> </i>
@@ -26,7 +25,6 @@ rails <p id="notice"><%= notice %></p>
   <strong>Twitter:</strong>
   <em class="form-control"> <%= @friend.twitter %> </em>
 </p>
-<!-- </div> -->
 
 <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary"  %> |
 <%= link_to 'Back', friends_path, class:"btn btn-secondary"  %>

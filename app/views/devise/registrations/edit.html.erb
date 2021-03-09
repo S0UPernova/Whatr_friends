@@ -22,11 +22,11 @@
       <% end %>
       <div class="field form-group">
         <% f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Password confirmation" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Confirm Password (not the word Password)" %>
       </div>
       <div class="field form-group mt-5">
         <% f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-        <%= f.password_field :current_password, autocomplete: "current-password", class:"form-control", placeholder:"Current Password (It's password... isn't it)" %>
+        <%= f.password_field :current_password, autocomplete: "current-password", class:"form-control", placeholder:"Current Password (Is it Password?)" %>
       </div>
       <div class="actions">
         <%= f.submit "Update", class:"btn btn-success my-3" %> <%= link_to "Back", :back, class:"btn btn-secondary" %>

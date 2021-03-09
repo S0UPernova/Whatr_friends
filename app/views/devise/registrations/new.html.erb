@@ -14,14 +14,14 @@
 
       <div class="field form-group">
         <% f.label :password %>
-        <%= f.password_field :password, autocomplete: "new-password", class:"form-control", placeholder:"Password (not just the word password)" %>
+        <%= f.password_field :password, autocomplete: "new-password", class:"form-control", placeholder:"Password (For the love of god, not just password)" %>
       </div>
       <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
       <div class="field form-group my-3">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Confirm Password" %>
+        <% f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", placeholder:"Confirm Password (It's password... isn't it)" %>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" target="_blank" required>

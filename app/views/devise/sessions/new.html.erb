@@ -10,7 +10,7 @@
       </div>
       <div class="field form-group">
         <% f.label :password %><br />
-        <%= f.password_field :password, autocomplete: "current-password", class:"form-control", placeholder:"Password" %>
+        <%= f.password_field :password, autocomplete: "current-password", class:"form-control", placeholder:"Password (not just the word Password)" %>
       </div>
       <% if devise_mapping.rememberable? %>
         <div class="field form-group">
